@@ -1,0 +1,93 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.351);
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    max-width: 70%;
+    justify-content: space-evenly;
+    flex: 2;
+    padding: 0;
+}
+ul li{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 3px;
+}
+li:hover{
+    border: 1px solid rgba(128, 128, 128, 0.593);
+    cursor: pointer;
+    border-radius: 5px;
+}
+span{
+    padding-left: 5px;
+    color: black;
+}
+nav button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.551);
+}
+h1{
+    margin-left: 4em;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+section div{
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+}
+div:hover{
+    cursor: pointer;
+}
+div a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 10px auto;
+}
+a:visited{
+    color: black;
+}
+img{
+    border-radius: 60%;
+    width: 18em;
+    height: 15em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.551);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width: 515px){
+    ul li{
+        font-size: 0.9em;
+        transition: 1.5s;
+    }
+    nav button{
+        font-size: 0.9em;
+        transition: 1.5s;
+    }
+}
